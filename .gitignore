@@ -1,0 +1,5 @@
+/.vscode
+/.worktrees
+/.php-cs-fixer.dist.php.cache
+/vendor
+/composer.lock

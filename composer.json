@@ -1,0 +1,30 @@
+{
+    "name": "adsniper/kafka-rest-client",
+    "description": "Client for Confluent REST Proxy of Apache Kafka",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["kafka", "confluent", "proxy", "rest", "client"],
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "format": "@php vendor/bin/php-cs-fixer check",
+        "format-fix": "@php vendor/bin/php-cs-fixer fix",
+        "phpstan": "@php vendor/bin/phpstan analyse"
+    },
+    "require": {
+        "php": "^8.2",
+        "ext-curl": "*",
+        "guzzlehttp/guzzle": "^7.15",
+        "psr/log": "^3.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.2",
+        "friendsofphp/php-cs-fixer": "^3.95"
+    },
+    "autoload": {
+        "psr-4": {
+            "Adsniper\\KafkaRest\\": "src/"
+        }
+    }
+}
